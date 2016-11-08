@@ -1,9 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.10'
+    }
+}
+
 group 'com.odde'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
 apply plugin: 'idea'
+
+apply plugin: 'info.solidsoft.pitest'
+
+project.group = 'com.odde.pitest'
 
 repositories {
     mavenCentral()
