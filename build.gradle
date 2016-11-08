@@ -1,0 +1,17 @@
+group 'com.odde'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile (
+        "junit:junit:4.12",
+        "com.nitorcreations:junit-runners:1.2"
+    )
+}
